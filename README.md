@@ -1,7 +1,6 @@
-# Code Platoon - Guided Application
-
+# Code Platoon - Intro To Coding
 # Introduction
- Welcome to Code Platoon's Guided Application Program!  This repository contains all the files and information you need to complete this course and start your coding education journey!
+ Welcome to Code Platoon's Introduction to Coding!  This repository contains all the files and information you need to complete this course and start your coding education journey!
 
  ## Viewing Course Files
 
