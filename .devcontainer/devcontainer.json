@@ -1,0 +1,12 @@
+{
+    "name": "Python Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/python:latest",
+    "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt"
+}
