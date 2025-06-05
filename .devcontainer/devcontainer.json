@@ -1,0 +1,14 @@
+{
+  "name": "Python Dev Container with Jupyter",
+  "image": "mcr.microsoft.com/devcontainers/python:latest",
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/bin/python3"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter"
+  ],
+  "postCreateCommand": "pip install -r requirements.txt jupyterlab",
+  "forwardPorts": [8888]
+}
