@@ -2,13 +2,14 @@
   "name": "Python Dev Container with Jupyter",
   "image": "mcr.microsoft.com/devcontainers/python:latest",
   "settings": {
-    "python.defaultInterpreterPath": "/usr/bin/python3"
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "jupyter.jupyterServerType": "local"
   },
   "extensions": [
     "ms-python.python",
     "ms-python.vscode-pylance",
     "ms-toolsai.jupyter"
   ],
-  "postCreateCommand": "pip install -r requirements.txt jupyterlab",
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt jupyterlab ipykernel && python -m ipykernel install --user --name devcontainer-kernel --display-name \"Python (Codespace)\"",
   "forwardPorts": [8888]
 }
